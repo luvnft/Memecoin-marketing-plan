@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Coin Marketing Planner</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gradient-to-r from-pink-600 to-purple-600 text-white py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-4 text-center">Meme Coin Marketing Planner</h1>
+            <p class="text-xl opacity-90 text-center">Track your marketing campaigns and budget allocation</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Marketing Phases -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <!-- Pre-Launch Marketing -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-xl font-bold mb-4 text-pink-600">Pre-Launch Marketing</h2>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-pink-600">
+                            <span class="ml-2">Create Viral Meme Content (10-15 daily)</span>
+                        </label>
+                        <span class="text-sm text-gray-600">0.5 SOL/day</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-pink-600">
+                            <span class="ml-2">Twitter Space AMAs (3x weekly)</span>
+                        </label>
+                        <span class="text-sm text-gray-600">1 SOL/week</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-pink-600">
+                            <span class="ml-2">Telegram/Discord Community Building</span>
+                        </label>
+                        <span class="text-sm text-gray-600">2 SOL/week</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-pink-600">
+                            <span class="ml-2">Influencer Outreach Campaign</span>
+                        </label>
+                        <span class="text-sm text-gray-600">5 SOL/influencer</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Launch Phase Marketing -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-xl font-bold mb-4 text-purple-600">Launch Phase Marketing</h2>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-purple-600">
+                            <span class="ml-2">24h Twitter Trending Campaign</span>
+                        </label>
+                        <span class="text-sm text-gray-600">10 SOL</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-purple-600">
+                            <span class="ml-2">Telegram Calls/Promotions</span>
+                        </label>
+                        <span class="text-sm text-gray-600">5 SOL</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-purple-600">
+                            <span class="ml-2">Launch Day Giveaway Event</span>
+                        </label>
+                        <span class="text-sm text-gray-600">3 SOL</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-purple-600">
+                            <span class="ml-2">CoinGecko/CMC Fast Track</span>
+                        </label>
+                        <span class="text-sm text-gray-600">8 SOL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Budget Allocation -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-6">Marketing Budget Allocation</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div>
+                    <label class="block text-gray-700 mb-2">Content Creation (SOL)</label>
+                    <input type="number" id="contentBudget" class="w-full p-2 border rounded" value="5" min="0">
+                    <p class="text-sm text-gray-600 mt-1">Memes, Videos, Graphics</p>
+                </div>
+                <div>
+                    <label class="block text-gray-700 mb-2">Community Growth (SOL)</label>
+                    <input type="number" id="communityBudget" class="w-full p-2 border rounded" value="8" min="0">
+                    <p class="text-sm text-gray-600 mt-1">Telegram/Discord Management</p>
+                </div>
+                <div>
+                    <label class="block text-gray-700 mb-2">Influencer Marketing (SOL)</label>
+                    <input type="number" id="influencerBudget" class="w-full p-2 border rounded" value="15" min="0">
+                    <p class="text-sm text-gray-600 mt-1">Promotions & Partnerships</p>
+                </div>
+                <div>
+                    <label class="block text-gray-700 mb-2">Advertising (SOL)</label>
+                    <input type="number" id="adBudget" class="w-full p-2 border rounded" value="12" min="0">
+                    <p class="text-sm text-gray-600 mt-1">Paid Promotions & Listings</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Marketing Timeline -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-bold mb-6">Marketing Timeline</h2>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-24 text-sm font-medium">Week 1-2</div>
+                    <div class="flex-1 ml-4">
+                        <div class="h-2 bg-pink-200 rounded">
+                            <div class="h-2 bg-pink-600 rounded" style="width: 100%"></div>
+                        </div>
+                        <div class="mt-2 text-sm">Community Building & Content Creation</div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-24 text-sm font-medium">Week 2-3</div>
+                    <div class="flex-1 ml-4">
+                        <div class="h-2 bg-purple-200 rounded">
+                            <div class="h-2 bg-purple-600 rounded" style="width: 75%"></div>
+                        </div>
+                        <div class="mt-2 text-sm">Influencer Partnerships & AMAs</div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-24 text-sm font-medium">Week 3-4</div>
+                    <div class="flex-1 ml-4">
+                        <div class="h-2 bg-indigo-200 rounded">
+                            <div class="h-2 bg-indigo-600 rounded" style="width: 50%"></div>
+                        </div>
+                        <div class="mt-2 text-sm">Launch Preparation & Hype Building</div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-24 text-sm font-medium">Launch Week</div>
+                    <div class="flex-1 ml-4">
+                        <div class="h-2 bg-blue-200 rounded">
+                            <div class="h-2 bg-blue-600 rounded" style="width: 25%"></div>
+                        </div>
+                        <div class="mt-2 text-sm">Launch Events & Promotions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>Marketing Budget: <span id="totalBudget">40</span> SOL</p>
+            <p class="text-gray-400 mt-2">Allocate budget wisely across different marketing channels</p>
+        </div>
+    </footer>
+
+    <script>
+        function updateTotalBudget() {
+            const content = parseFloat(document.getElementById('contentBudget').value) || 0;
+            const community = parseFloat(document.getElementById('communityBudget').value) || 0;
+            const influencer = parseFloat(document.getElementById('influencerBudget').value) || 0;
+            const ad = parseFloat(document.getElementById('adBudget').value) || 0;
+            
+            const total = content + community + influencer + ad;
+            document.getElementById('totalBudget').textContent = total;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = ['contentBudget', 'communityBudget', 'influencerBudget', 'adBudget'];
+            inputs.forEach(id => {
+                document.getElementById(id).addEventListener('input', updateTotalBudget);
+            });
+            updateTotalBudget();
+        });
+    </script>
+</body>
+</html>
